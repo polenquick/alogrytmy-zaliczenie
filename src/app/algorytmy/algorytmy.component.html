@@ -1,3 +1,47 @@
-<p>algorytmy works!</p>
-<h1> sfddfsdsf </h1>
-<p> commit & push</p>
+<div class="card">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group row">
+        <table class="table-striped">
+          <tbody>
+
+          <tr> zmodyfikowana >>
+
+            <th *ngFor="let element of array1"> {{element}}</th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <label> Oryginalna tablica >> {{originalNumbers1D}}</label>
+
+
+      </div>
+      <br>
+
+    </form>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-outline-info"
+            (click)="alfabetycznie()">Posortowana
+      alfabetycznie
+    </button>
+    <button class="btn btn-outline-info"
+            (click)="rosnaco()">Posortowana rosnąco
+    </button>
+    <button class="btn btn-outline-info"
+            (click)="evenElements()">Parzyste
+    </button>
+    <button class="btn btn-outline-info"
+            (click)="divisibleBy4()">Podzielne przez 4
+    </button>
+    <button class="btn btn-outline-info"
+            (click)="notDivisibleBy4()">Niepodzielne przez 4
+    </button>
+    <button class="btn btn-outline-info"
+            (click)="notDivisibleBy5()">Niepodzielne przez 5
+    </button>
+  </div>
+</div>
