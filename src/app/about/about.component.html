@@ -1,5 +1,53 @@
 <p>Marcin Kołodziej 3867</p>
 
+<div class="card">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group row">
+        <table class="table-striped">
+          <tbody>
+
+          <tr> oryginalne nazwy >>
+
+          </tr>
+          <tr>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let uczen of Uczniowie">
+              {{uczen.name}} {{uczen.nazwisko}}
+              <span class="badge badge-light badge-pill">
+                wzrost: {{uczen.wiek}}</span>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+
+
+
+      </div>
+      <br>
+
+    </form>
+  </div>
+
+
+  <button class="btn btn-outline-info"
+          (click)="sortujPl()">name od tylu
+  </button>
+  <button class="btn btn-outline-info"
+          (click)="sortuj1Pl()">name normalnie
+  </button>
+  <button class="btn btn-outline-info"
+          (click)="sortuj3()">nazwisko od tylu
+  </button>
+  <button class="btn btn-outline-info"
+          (click)="sortuj4()">nazwisko normalnie
+  </button>
+  </div>
+
+
 
 
 

@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AlgorytmyComponent implements OnInit {
   array1 = [];
   primaryArray: number[] = [1, 2, 6, 66, 66 , 66, 55, 55, 66, 44, 33, 12, 21, 22, 3000];
-
   constructor() { }
 
   ngOnInit(): void {
