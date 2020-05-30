@@ -17,8 +17,8 @@ export class AboutComponent implements OnInit {
     for (let i = 0; i <= 5; i++) {
       this.Uczniowie.push({name: 'Marcin', nazwisko: 'Kołodziej' + i, wiek: 12 + i})
     }
-    this.Uczniowie.push({name: 'Ąnna', nazwisko: 'Acka', wiek: 200});
-    this.Uczniowie.push({name: 'Anna', nazwisko: 'Ąbka', wiek: 201});
+    this.Uczniowie.push({name: 'Ąnna', nazwisko: 'Acka', wiek: 20});
+    this.Uczniowie.push({name: 'Anna', nazwisko: 'Ąbka', wiek: 18});
     this.Uczniowie.push({name: 'Zbigniew', nazwisko: 'Złoto', wiek: 55});
     for (const uczen of this.Uczniowie) {
       console.log(uczen.name + ' ' + uczen.nazwisko);

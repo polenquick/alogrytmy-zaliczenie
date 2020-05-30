@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
   public BigInt: number;
 
-  test() {
+  test():string {
     var sum = 0;
     var array = [];
 
@@ -49,8 +49,8 @@ export class TestComponent implements OnInit {
 
     console.log('Suma wynosi: ' + sum + ' po ' + ilosc_prob + ' probach');
     console.log('Srednia po wykonaniu ' + ileChceProb + ' razy wynosi: ' + srednia);
+    return 'Srednia po wykonaniu ' + ileChceProb + ' razy wynosi: ' + srednia;
   }
-
   constructor() {
   }
 

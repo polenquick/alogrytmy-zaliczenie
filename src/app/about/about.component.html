@@ -9,30 +9,24 @@
         <table class="table-striped">
           <tbody>
 
-          <tr> oryginalne nazwy >>
+          <tr> sortowanie >>
 
           </tr>
           <tr>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let uczen of Uczniowie">
+            <li class="list-group-item d-flex justify-content-between align-items-center"
+                *ngFor="let uczen of Uczniowie">
               {{uczen.name}} {{uczen.nazwisko}}
               <span class="badge badge-light badge-pill">
-                wzrost: {{uczen.wiek}}</span>
+                wiek: {{uczen.wiek}}</span>
           </tr>
           </tbody>
         </table>
       </div>
       <div>
-
-
-
       </div>
       <br>
-
     </form>
   </div>
-
-
   <button class="btn btn-outline-info"
           (click)="sortujPl()">name od tylu
   </button>
@@ -45,7 +39,7 @@
   <button class="btn btn-outline-info"
           (click)="sortuj4()">nazwisko normalnie
   </button>
-  </div>
+</div>
 
 
 
